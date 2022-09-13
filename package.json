@@ -1,0 +1,38 @@
+{
+  "name": "uni-atlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "icon": "svgr public/icons -d components/icons"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "sass": "^1.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "@svgr/cli": "^5.5.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "sass-loader": "^11.0.1",
+    "scss-loader": "0.0.1",
+    "style-loader": "^2.0.0"
+  }
+}

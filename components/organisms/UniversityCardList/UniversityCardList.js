@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Link from "next/link";
 
 import styles from "./universityCardList.module.scss";
 
@@ -14,15 +13,12 @@ export default function UniversityCardList() {
       <ul className={styles.content}>
         {context.unies.map((uni) => (
           <li key={uni.id}>
-            <Link href="/universiteler/[uni]" as={`/universiteler/${uni.slug}`}>
-              <a>
-                <UniversityCard
-                  src={`/uni_avatars/${uni.img}`}
-                  uniName={uni.uniName}
-                  city={uni.city}
-                />
-              </a>
-            </Link>
+            <UniversityCard
+              src={`/uni_avatars/${uni.img}`}
+              uniName={uni.uniName}
+              city={uni.city}
+              slug={uni.slug}
+            />
           </li>
         ))}
       </ul>
